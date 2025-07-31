@@ -1,16 +1,16 @@
 body {
   margin: 0;
   padding: 0;
-  background: url('assets/bg.jpg') center/cover no-repeat fixed;
-  color: #ffffff;
+  background: #0d0d0d;
+  color: #fff;
 }
 
 .container {
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
-  background: rgba(10, 10, 10, 0.9);
-  border-radius: 15px;
+  background: #121212;
+  border-radius: 12px;
   box-shadow: 0 0 15px #00ffe7;
 }
 
@@ -22,17 +22,17 @@ h1, h2, h3 {
 .tabs {
   display: flex;
   justify-content: center;
-  gap: 10px;
   margin-bottom: 20px;
 }
 .tabs button {
   padding: 10px 20px;
-  border: none;
-  background: #222;
+  margin: 0 10px;
+  background: #1e1e1e;
   color: #00ffe7;
-  border-radius: 5px;
-  cursor: pointer;
+  border: none;
+  border-radius: 8px;
   font-weight: bold;
+  cursor: pointer;
 }
 .tabs button.active {
   background: #00ffe7;
@@ -45,8 +45,8 @@ h1, h2, h3 {
 }
 .search-bar input {
   padding: 8px;
-  margin: 0 5px;
-  border-radius: 5px;
+  margin: 5px;
+  border-radius: 6px;
   border: none;
 }
 .search-bar button {
@@ -54,7 +54,8 @@ h1, h2, h3 {
   background: #00ffe7;
   color: #000;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -63,7 +64,7 @@ ul {
   padding: 0;
 }
 ul li {
-  background: #222;
+  background: #1e1e1e;
   margin: 5px 0;
   padding: 10px;
   border-radius: 8px;
@@ -71,7 +72,7 @@ ul li {
   transition: background 0.2s;
 }
 ul li:hover {
-  background: #333;
+  background: #2e2e2e;
 }
 
 img#profileIcon {
@@ -87,8 +88,8 @@ img#profileIcon {
 }
 
 #commentPager button {
-  margin: 5px;
-  padding: 5px 10px;
+  margin: 4px;
+  padding: 6px 10px;
   background: #00ffe7;
   color: #000;
   border: none;
@@ -96,6 +97,7 @@ img#profileIcon {
   cursor: pointer;
 }
 #commentPager button:disabled {
-  background: #888;
+  background: #666;
+  color: #ccc;
   cursor: default;
 }
