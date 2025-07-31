@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GD Browser Clone</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    @font-face {
+      font-family: 'Pusab';
+      src: url('assets/font/Pusab.ttf');
+    }
+    body {
+      font-family: 'Pusab', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Geometry Dash Browser</h1>
+
+    <div class="tabs">
+      <button id="tabRecent" class="active">Recent</button>
+      <button id="tabDownload">Downloaded</button>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" id="searchLevelID" placeholder="Level ID">
+      <input type="text" id="searchPlayerID" placeholder="Player ID">
+      <button id="btnSearch">Search</button>
+    </div>
+
+    <ul id="levelList"></ul>
+
+    <div id="profileSection" class="hidden">
+      <h2 id="profileName"></h2>
+      <img id="profileIcon" src="" alt="Player Icon">
+      <p>ID: <span id="profileId"></span></p>
+      <p>Stars: <span id="stars"></span> | Coins: <span id="coins"></span> | CP: <span id="cp"></span></p>
+
+      <h3>Levels Created</h3>
+      <ul id="createdLevels"></ul>
+
+      <h3>Comments</h3>
+      <ul id="commentsList"></ul>
+      <div id="commentPager"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
