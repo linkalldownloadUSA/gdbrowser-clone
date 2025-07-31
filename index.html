@@ -2,9 +2,9 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GD Browser Clone</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
   <style>
     @font-face {
       font-family: 'Pusab';
@@ -21,12 +21,12 @@
 
     <div class="tabs">
       <button id="tabRecent" class="active">Recent</button>
-      <button id="tabDownload">Downloaded</button>
+      <button id="tabDownload">Most Downloaded</button>
     </div>
 
     <div class="search-bar">
-      <input type="text" id="searchLevelID" placeholder="Level ID">
-      <input type="text" id="searchPlayerID" placeholder="Player ID">
+      <input type="text" id="searchLevelID" placeholder="Search Level ID">
+      <input type="text" id="searchPlayerID" placeholder="Search Player ID">
       <button id="btnSearch">Search</button>
     </div>
 
@@ -38,7 +38,7 @@
       <p>ID: <span id="profileId"></span></p>
       <p>Stars: <span id="stars"></span> | Coins: <span id="coins"></span> | CP: <span id="cp"></span></p>
 
-      <h3>Levels Created</h3>
+      <h3>Created Levels</h3>
       <ul id="createdLevels"></ul>
 
       <h3>Comments</h3>
@@ -46,7 +46,6 @@
       <div id="commentPager"></div>
     </div>
   </div>
-
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
